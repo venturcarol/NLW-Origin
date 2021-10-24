@@ -22,39 +22,60 @@
           </span>
           <img src="http://lorempixel.com/185/185/people/" alt="Foto pessoal" />
         </div>
-        <h1>Carolina Ventura</h1>
-        <a href="https://instagram.com/cventurr">
+        <h1 id="userName">Mayk Brito</h1>
+        <a href="https://github.com/maykbrito" target="_blank">
           <img src="images/github.svg" alt="ícone github">
-          cventurr</a>
+          Mayk Brito</a>
           <p>
             An instructor focused on helping people start programming for web
           </p>
 
-          <ul>
-            <li>
-              <a href="https:/youtube.com/cventurr">
-              <img src="images/youtube.svg" alt="ícone youtube" target="_blank" />
+          <ul id="socialLinks">
+            <li class="youtube">
+              <a href="https:/youtube.com/maykbrito" target="_blank" >
+              <img src="images/youtube.svg" alt="ícone youtube" />
             </a>
           </li>
-          <li>
-            <a href="https:/instagram.com/cventurr">
-            <img src="images/instagram.svg" alt="ícone instagram" target="_blank" />
+          <li class="instagram">
+            <a href="https:/instagram.com/maykbrito" target="_blank" >
+            <img src="images/instagram.svg" alt="ícone instagram" />
           </a>
         </li>
-        <li>
-          <a href="https:/facebook.com/cventurr">
-          <img src="images/facebook.svg" alt="ícone facebook" target="_blank" />
+        <li class="facebook">
+          <a href="https:/facebook.com/maykbrito" target="_blank" >
+          <img src="images/facebook.svg" alt="ícone facebook" />
         </a>
       </li>
-      <li>
-        <a href="https:/twitter.com/cventurr">
-        <img src="images/twitter.svg" alt="ícone twitter" target="_blank" />
-      </a>
-    </li>
-          </ul>
-      </div>
-      
-    </main>
+      <li class="twitter">
+        <a href="https:/twitter.com/maykbrito" target="_blank" >
+        <img src="images/twitter.svg" alt="ícone twitter" />
+        </a>
+      </li>
+    </ul>
+  </div>   
+</main>
+
+  <script>
+
+    const links = {
+      github: "venturcarol",
+      youtube: "kG97ua8QW5_8-SyfrpAiYg",
+      facebook: "maykbrito",
+      instagram: "cventurr",
+      twitter: "venturcarol"
+    }
+
+    function changeSocialMediaLinks(){
+      for(let li of socialLinks.children){
+        const social = li.getAttribute('class');
+        alert(social)
+      }
+    }
+
+    changeSocialMediaLinks()
+    
+
+  </script>
     
   </body>
 </html>
