@@ -20,13 +20,13 @@
           <span>
             <img src="images/build.svg" alt="Selo Rocketseat" />
           </span>
-          <img src="http://lorempixel.com/185/185/people/" alt="Foto pessoal" />
+          <img src="http://lorempixel.com/185/185/people/" alt="Foto pessoal" id="userPhoto"/>
         </div>
         <h1 id="userName">Mayk Brito</h1>
-        <a href="https://github.com/maykbrito" target="_blank">
-          <img src="images/github.svg" alt="ícone github">
-          Mayk Brito</a>
-          <p>
+        <a id="userLink" href="https://github.com/maykbrito" target="_blank">
+          <img src="images/github.svg" alt="ícone github" />
+          <span id="userLogin">Mayk Brito</span></a>
+          <p id="userBio">
             An instructor focused on helping people start programming for web
           </p>
 
@@ -55,27 +55,7 @@
   </div>   
 </main>
 
-  <script>
-
-    const links = {
-      github: "venturcarol",
-      youtube: "kG97ua8QW5_8-SyfrpAiYg",
-      facebook: "maykbrito",
-      instagram: "cventurr",
-      twitter: "venturcarol"
-    }
-
-    function changeSocialMediaLinks(){
-      for(let li of socialLinks.children){
-        const social = li.getAttribute('class');
-        alert(social)
-      }
-    }
-
-    changeSocialMediaLinks()
-    
-
-  </script>
+  <script src="main.js"></script>
     
   </body>
 </html>
